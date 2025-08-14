@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+
+:root {
+  --primary: #8d9d4f;
+  --primary-foreground: #fdfbf6;
+  --secondary: #e4d7b0;
+  --secondary-foreground: #5c4b3e;
+  --accent: #dbc894;
+  --accent-foreground: #5c4b3e;
+  --popover: #f3ead2;
+  --popover-foreground: #5c4b3e;
+  --background: #121212;
+  --surface: #121212;
+  --error: #d98b7e;
+  --warning: #F39C12;
+  --input: #dbc894;
+  --border: #b19681;
+  --on-background: #FFFFFF;
+  --on-background-grey: #c7c7c7;
+  --on-surface: #FFFFFF;
+  --shadow: 5px 5px 5px rgba(92, 75, 62, 0.2);
+  --card: #e7dbbf;
+  --card-foreground: #5c4b3e;
+  --muted-foreground: #85766a;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+}
+
+body {
+  background-color: var(--secondary);
+  padding: 40px 80px;
+}
+
+a {
+  color: var(--accent-foreground);
+  text-decoration: none;
+}
+
+.homepage-container {
+  position: relative;
+}
+
+.note-item-container {
+  background-color: var(--card);
+  padding: 20px;
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-top: 10px;
+}
+
+.note-item-container:hover {
+  background-color: var(--popover);
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.note-item-header {
+  margin-bottom: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.note-item-header p {
+  font-size: small;
+}
+
+
+.search-bar {
+  padding: 8px;
+  width: 100%;
+  border-radius: 4px;
+  margin: 16px 0px;
+  border: 1px solid var(--border);
+  background-color: var(--input);
+}
+
+.navigation-container {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  margin-bottom: 20px;
+}
+
+.button-position{
+  position: fixed;
+  bottom: 80px;
+  right: 80px;
+}
+
+.btn-create {
+  background-color: var(--primary);
+  padding: 0px 10px;
+  font-size: 32px;
+  border-radius: 1000px;
+} 
+
+.btn-archive{
+  background-color: var(--accent);
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+
+  border-color: var(--border);
+  cursor: pointer;
+}
+
+.btn-delete {
+  background-color: var(--error);
+  padding: 8px 16px;
+  border-color: var(--border);
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  background-color: var(--primary);
+  border-color: var(--border);
+  padding: 8px 16px;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.btn-container {
+  display: flex;
+  gap: 8px;
+  margin-top: 20px
+}
+
+.notes-input {
+  background-color: var(--card);
+  box-shadow: var(--shadow);
+  padding: 24px;
+  margin-top: 20px;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.notes-input input, textarea {
+  background-color: var(--input);
+  border: 1px solid var(--border);
+  width: 100%;
+  border-radius: 4px;
+  padding: 8px;
+  margin-top: 8px;
+  overflow:hidden
+}
