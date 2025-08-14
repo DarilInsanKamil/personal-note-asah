@@ -157,3 +157,16 @@ a {
   margin-top: 8px;
   overflow:hidden
 }
+
+.not-found-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 80vh;
+  align-items: center;
+}
+
+.not-found-container h1 , p {
+  margin-bottom: 12px;
+}
+
